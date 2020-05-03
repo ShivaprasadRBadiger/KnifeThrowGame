@@ -1,0 +1,83 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: beff1ec2d52d4aad9759cbcf899197d2, type: 3}
+  m_Name: GameWideSettings
+  m_EditorClassIdentifier: 
+  knifeBehaviourSettings:
+    throwForce: 1000
+    mass: 1
+    thresholdAngle: 5
+  wheelBehaviourSettings:
+    angularSpeedOverTime:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 100
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 0.2
+        value: 300
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 0.6
+        value: -300
+        inSlope: -460.9007
+        outSlope: -460.9007
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 1
+        value: 400
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    maxTorque: 1000
+    smoothTimeProgressionTransition: 1
+  knifeThrowSettings:
+    knifePrefab: {fileID: 8315341014818008967, guid: d307226a2aa281f4daddef889d5ebdc7,
+      type: 3}
+    availableKnives: 5
+    poolSettings:
+      minSize: 4
+      maxSize: 20
+  remainingKnifeViewSettings:
+    KnifeItemPrefab: {fileID: 1444228193911483614, guid: 007374c9455d59b43981418d8e4bd8af,
+      type: 3}
+    WidgetPoolSettings:
+      minSize: 4
+      maxSize: 20
+  wheelDecoratorSettings:
+    preStuckKnifeCount: 3
+    knifePrefab: {fileID: 114260333977397860, guid: ee43dbf747285e34d8edccbdc78bf984,
+      type: 3}
+    knifePoolSettings:
+      minSize: 1
+      maxSize: 10
